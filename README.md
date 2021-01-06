@@ -21,7 +21,7 @@ In this day and age, it can be difficult to find time to take a breather. Relax,
   - Keyframes and Animations
 - JavaScript
 
-# Work In Progress
+## Work In Progress
 
 - A 60-second countdown timer
   - Start and restart buttons that begin countdown
