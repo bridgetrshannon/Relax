@@ -7,6 +7,9 @@ const totalTime = 7500;
 const breatheTime = (totalTime / 5) * 2;
 const holdTime = totalTime / 5;
 
+// calls function
+breatheAnimation();
+
 // function for breathe animation
 function breatheAnimation() {
   text.innerHTML = "~Breathe In~";
@@ -18,9 +21,12 @@ function breatheAnimation() {
     text.innerText = "Hold";
 
     setTimeout(() => {
-      text.innerText = "~Breath Out~";
+      text.innerText = "~Breathe Out~";
       //   shrink animation
       container.className = "container shrink";
     }, holdTime);
   }, breatheTime);
 }
+
+// calls function every x amount of seconds the totalTime variable is for
+setInterval(breatheAnimation, totalTime);
