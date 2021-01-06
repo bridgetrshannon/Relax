@@ -6,3 +6,21 @@ const text = document.querySelector("#text");
 const totalTime = 7500;
 const breatheTime = (totalTime / 5) * 2;
 const holdTime = totalTime / 5;
+
+// function for breathe animation
+function breatheAnimation() {
+  text.innerHTML = "~Breathe In~";
+  //   grow animation
+  container.className = "container grow";
+
+  //   animation changes after amount of time for breatheTime variable
+  setTimeout(() => {
+    text.innerText = "Hold";
+
+    setTimeout(() => {
+      text.innerText = "~Breath Out~";
+      //   shrink animation
+      container.className = "container shrink";
+    }, holdTime);
+  }, breatheTime);
+}
