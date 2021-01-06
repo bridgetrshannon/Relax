@@ -12,6 +12,10 @@ In this day and age, it can be difficult to find time to take a breather. Relax,
 
 ## Technologies
 
+<img float="left" alt="HTML badge" src="https://img.shields.io/badge/HTML-14%25-orange">
+<img float="left" alt="CSS badge" src="https://img.shields.io/badge/CSS-52%25-blueviolet">
+<img float="left" alt="JavaScript badge" src="https://img.shields.io/badge/JavaScript-34%25-yellow">
+
 - HTML
 - CSS
   - Keyframes and Animations
