@@ -12,7 +12,7 @@ breatheAnimation();
 
 // function for breathe animation
 function breatheAnimation() {
-  text.innerHTML = "~Breathe In~";
+  text.innerHTML = "Breathe In";
   //   grow animation
   container.className = "container grow";
 
@@ -21,7 +21,7 @@ function breatheAnimation() {
     text.innerText = "Hold";
 
     setTimeout(() => {
-      text.innerText = "~Breathe Out~";
+      text.innerText = "Breathe Out";
       //   shrink animation
       container.className = "container shrink";
     }, holdTime);
