@@ -9,7 +9,7 @@ const breatheTime = (totalTime / 5) * 2;
 const holdTime = totalTime / 5;
 
 // calls function
-// breatheAnimation();
+breatheAnimation();
 
 // function for breathe animation
 function breatheAnimation() {
@@ -32,31 +32,31 @@ function breatheAnimation() {
 // calls function every x amount of seconds the totalTime variable is for
 setInterval(breatheAnimation, totalTime);
 
-// Timer
-// event listener that targets the start button for the timer
-document.addEventListener("DOMContentLoaded", () => {
-  // variables that target ids in html
-  const timeLeftDisplay = document.querySelector("#time-left");
-  const startBtn = document.querySelector("#start-button");
-  const restartBtn = document.querySelector("#restart-button");
-  let timeLeft = 60;
+// // Timer (work in progress)
+// // event listener that targets the start button for the timer
+// document.addEventListener("DOMContentLoaded", () => {
+//   // variables that target ids in html
+//   const timeLeftDisplay = document.querySelector("#time-left");
+//   const startBtn = document.querySelector("#start-button");
+//   const restartBtn = document.querySelector("#restart-button");
+//   let timeLeft = 60;
 
-  function countDown() {
-    setInterval(function () {
-      if (timeLeft <= 0) {
-        clearInterval((timeLeft = 0));
-      }
-      timeLeftDisplay.innerHTML = timeLeft;
-      timeLeft -= 1;
-    }, 1000);
-  }
+//   function countDown() {
+//     setInterval(function () {
+//       if (timeLeft <= 0) {
+//         clearInterval((timeLeft = 0));
+//       }
+//       timeLeftDisplay.innerHTML = timeLeft;
+//       timeLeft -= 1;
+//     }, 1000);
+//   }
 
-  function restart() {
-    clearInterval((timeLeft = 60));
-  }
-  // on click event for start button that calls countDown function
-  startBtn.addEventListener("click", countDown, breatheAnimation);
+//   function restart() {
+//     clearInterval((timeLeft = 60));
+//   }
+//   // on click event for start button that calls countDown function
+//   startBtn.addEventListener("click", countDown, breatheAnimation);
 
-  // on click event for restart button that calls restart function
-  restartBtn.addEventListener("click", restart);
-});
+//   // on click event for restart button that calls restart function
+//   restartBtn.addEventListener("click", restart);
+// });
