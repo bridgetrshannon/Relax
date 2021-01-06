@@ -9,7 +9,7 @@ const breatheTime = (totalTime / 5) * 2;
 const holdTime = totalTime / 5;
 
 // calls function
-breatheAnimation();
+// breatheAnimation();
 
 // function for breathe animation
 function breatheAnimation() {
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     clearInterval((timeLeft = 60));
   }
   // on click event for start button that calls countDown function
-  startBtn.addEventListener("click", countDown);
+  startBtn.addEventListener("click", countDown, breatheAnimation);
 
   // on click event for restart button that calls restart function
   restartBtn.addEventListener("click", restart);
