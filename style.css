@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 
+/* centers body */
 body {
-  background: #224941 url('./images/calm.jpeg') no-repeat center center/cover;
+  background: #14233a url('./images/calm.jpeg') no-repeat center center/cover;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
@@ -16,6 +17,7 @@ body {
   margin: 0;
 }
 
+/* centers container within body */
 .container {
     display: flex;
     align-items: center;
@@ -27,6 +29,7 @@ body {
     transform: scale(1);
 }
 
+/* circle split into 3 colors*/
 .gradient-circle {
     background: conic-gradient(
         #5593b7 0%,
@@ -39,12 +42,15 @@ body {
     height: 320px;
     width: 320px;
     position: absolute;
+    /* moved over slightly so solid circle doesn't hide it */
     top: -10px;
     left: -10px;
+    /* sends conic-gradient circle behind solid circle */
     z-index: -2;
     border-radius: 50%;
 }
 
+/* solid circle that goes in front of the conic-gradient circle */
 .circle {
     background-color: #14233a;
     height: 100%;
@@ -52,21 +58,38 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    /* sends circle infront of conic-gradient circle */
     z-index: -1;
     border-radius: 50%;
 }
 
+/* perimeters that pointer can move / how long it moves */
 .pointer-container {
     position: absolute;
     top: -40px;
     left: 140px;
     width: 20px;
     height: 190px;
+    background: orange;
+    animation: rotate 7.5s linear forwards infinite;
+    transform-origin: bottom center;
 }
 
+/* white ball that follows the conic-gradient circle outline */
 .pointer {
     background-color: white;
     border-radius: 50%;
     height: 20px;
     width: 20px;
+}
+
+/* animation for the pointer */
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
