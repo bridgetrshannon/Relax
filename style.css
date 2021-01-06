@@ -70,7 +70,6 @@ body {
     left: 140px;
     width: 20px;
     height: 190px;
-    background: orange;
     animation: rotate 7.5s linear forwards infinite;
     transform-origin: bottom center;
 }
@@ -83,7 +82,17 @@ body {
     width: 20px;
 }
 
-/* animation for the pointer */
+/* grow keyframe animation starts when class changes due to js file */
+.container.grow {
+    animation: grow 3s linear forwards;
+}
+
+/* shrink keyframe animation starts when class changes due to js file */
+.container.shrink {
+    animation: shrink 3s linear forwards;
+}
+
+/* rotate animation for the pointer */
 @keyframes rotate {
     from{
         transform: rotate(0deg);
@@ -91,5 +100,27 @@ body {
 
     to {
         transform: rotate(360deg);
+    }
+}
+
+/* grow animation for the circle */
+@keyframes grow {
+    from{
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+/* shrink animation for the circle */
+@keyframes shrink {
+    from{
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1);
     }
 }
