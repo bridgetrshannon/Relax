@@ -1,4 +1,4 @@
-# Relax
+# <img alt="relax logo" src="./assets/relax.png" height="100px">
 
 ## Description
 
