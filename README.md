@@ -4,6 +4,8 @@
 
 In this day and age, it can be difficult to find time to take a breather. Relax, a breathing application, allows you to reorient yourself, calmly and discreetly, with a visual director to tell you when to breathe in, hold, and breathe out.
 
+<img alt="relax demo gif" src="./assets/relax.gif" height="500px">
+
 ## Table of Contents
 
 - [Technologies](#technologies)

@@ -4,7 +4,7 @@
 
 /* centers body */
 body {
-  background: #14233a url('./images/calm.jpeg') no-repeat center center/cover;
+  background: #14233a url('./assets/calm.jpeg') no-repeat center center/cover;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
